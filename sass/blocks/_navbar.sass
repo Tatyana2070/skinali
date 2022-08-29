@@ -9,7 +9,6 @@
     display: flex
     justify-content: space-between
     align-items: center
-    min-height: 80px
   &__mobile, &__landline
     text-align: right
   &__phone
@@ -34,7 +33,7 @@
   padding-bottom: 16px
   background-color: $primary
   color: #fff
-  transform: translateY(-101%)
+  transform: translateY(-200%)
   transition: 0.3s
   z-index: 0
   &_active
@@ -76,8 +75,23 @@
     display: block
     font-size: 14px
     color: $text-color-light
+@media (max-width: 991px)
+  .navbar
+    &__mobile, &__landline
+      display: none
+@media (max-width: 576px)
+  .logo
+    display: none
+  .menu
+    top: 60px
+    &-button
+      height: 60px
+    &__nav
+      flex-direction: column
+    &__link
+      margin-bottom: 20px
+ 
 
-
-
+  
 
     
