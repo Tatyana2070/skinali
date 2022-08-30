@@ -559,7 +559,7 @@ input[type=checkbox]:checked + label:before {
   bottom: -80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     justify-content: center;
   }
@@ -570,5 +570,56 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 400px) {
   .price-block__card {
     margin: 10px;
+  }
+}
+.step {
+  position: relative;
+  text-align: center;
+}
+.step__image {
+  height: 60px;
+}
+.step__title {
+  font-size: 18px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.step:last-child:before {
+  display: none;
+}
+.step:before {
+  content: "";
+  width: 84%;
+  height: 2px;
+  background-color: rgba(126, 123, 120, 0.5);
+  display: block;
+  position: absolute;
+  top: 20%;
+  right: -51%;
+}
+.step__text {
+  max-width: 170px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.steps {
+  background-color: #f5f6f8;
+}
+.steps-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1199px) {
+  .step {
+    flex-basis: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .step {
+    flex-basis: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
