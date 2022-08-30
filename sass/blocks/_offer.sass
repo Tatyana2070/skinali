@@ -54,6 +54,8 @@
   .form
     &__row
       flex-direction: column
+      &-checkbox
+        flex-direction: row
     &__group
       flex-basis: 100%
       width: 100%
@@ -62,3 +64,11 @@
   .form__row-checkbox
     display: flex
     flex-direction: row
+@media ( max-width: 480px )
+  .form
+    &__row
+      &-checkbox
+        flex-direction: column
+        align-items: flex-start
+    &__checkbox
+      margin-bottom: 20px

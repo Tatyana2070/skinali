@@ -4,7 +4,7 @@ body
 img
   max-width: 100%
 .section
-  padding: 70px 0
+  padding: 100px 0
   &-title
     font-size: 30px
     +bold
@@ -21,6 +21,7 @@ img
   color: $primary
   background-color: #fff
   text-decoration: none
+  cursor: pointer
 .button
   text-decoration: none
   border: none
@@ -28,6 +29,7 @@ img
   padding: 25px 45px
   background-color: $primary
   color: #fff
+  cursor: pointer
   +bold
   &-fitting
     color: $primary
@@ -64,9 +66,11 @@ input[type="checkbox"]
       border: 1px solid #dddddd
       margin-right: 20px
 @media (max-width: 576px)
-  .button-o
+  .button
     font-size: 10px
-    .section
-      padding: 60px 0
-      &-title
-        font-size: 24px
+    &-o
+      font-size: 10px
+  .section
+    padding: 60px 0
+    &-title
+      font-size: 24px
