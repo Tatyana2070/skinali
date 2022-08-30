@@ -1,0 +1,25 @@
+.factory
+  display: flex
+  &-block
+    max-width: 720px
+    &__image
+      display: inline-block
+      float: left
+      margin-right: 20px
+    &__text
+      font-size: 20px
+      margin-top: 70px
+@media (max-width: 768px)
+  .factory
+    &-block
+      text-align: center
+      display: flex
+      flex-direction: column
+      &__image
+        min-width: 300px
+        margin-top: 50px
+      &__text
+        margin: 0
+     
+       
+
