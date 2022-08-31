@@ -25,4 +25,5 @@ $(window).load(function () {
     $('.select__dropdown').toggleClass('select__dropdown_open');
   });
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
+  
 });
