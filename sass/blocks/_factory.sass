@@ -1,23 +1,23 @@
 .factory
-  display: flex
+  &__section
+    margin-top: -100px
   &-block
-    max-width: 720px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
     &__image
-      display: inline-block
-      float: left
-      margin-right: 20px
+      margin: 20px 0
     &__text
+      margin-left: 70px
       font-size: 20px
-      margin-top: 70px
-@media (max-width: 768px)
+      flex-basis: 50%
+@media (max-width: 991px)
   .factory
     &-block
       text-align: center
       display: flex
       flex-direction: column
-      &__image
-        min-width: 300px
-        margin-top: 50px
       &__text
         margin: 0
      

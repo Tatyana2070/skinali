@@ -7,6 +7,7 @@ img
   padding: 100px 0
   &-title
     font-size: 30px
+    margin: 0
     +bold
     text-align: center
     text-transform: uppercase
@@ -22,6 +23,11 @@ img
   background-color: #fff
   text-decoration: none
   cursor: pointer
+  &:hover 
+    color: $primary-dark
+    border: 2px solid $primary-dark
+    box-shadow: 0 0 0 2px $primary-dark
+    transition: 0.5s
 .button
   text-decoration: none
   border: none
@@ -31,6 +37,10 @@ img
   color: #fff
   cursor: pointer
   +bold
+  &:hover 
+    background-color: $primary-dark
+    transition: 0.5s
+    box-shadow: 0 0 0 4px $primary-dark
   &-fitting
     color: $primary
     background-color: #fff
@@ -52,6 +62,42 @@ input[type="checkbox"]
   display: none
   &:checked + label:before
     background-color: $primary
+.select
+  height: 80px
+  width: 100%
+  border: 1px solid #dddddd
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 10px
+    transform: translateY(-50%)
+    width: 20px
+    height: 20px
+    background: url('../img/caret.png') no-repeat center
+    background-size: 100%
+  &:hover
+    cursor: pointer
+  &_checked
+    line-height: 80px
+    padding-left: 30px
+  &__dropdown
+    position: absolute
+    top: 80px
+    width: 100%
+    background-color: #fff
+    border: 1px solid #dddddd
+    margin: 0
+    list-style: none
+    padding: 0
+    display: none
+    &_open
+      display: block
+  &__option
+    padding: 20px
+    &:hover
+      background-color: $bg-secondary
 .checkbox
   &-label
     display: flex
